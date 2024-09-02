@@ -864,11 +864,11 @@
     awilix "^8.0.0"
 
 "@medusajs/fulfillment-manual@preview":
-  version "0.0.3-preview-20240711150439"
-  resolved "https://registry.yarnpkg.com/@medusajs/fulfillment-manual/-/fulfillment-manual-0.0.3-preview-20240711150439.tgz#bab864ec0cd211bb61254afab717272b7b2fe90a"
-  integrity sha512-pgcuBM2j9sqzLzugGXW3HtM8R6IVb4qFvhTovM3gvIa37WZDY2zIGbNRzXNhxxAtCvJ6smPwHeQzNXJpBHUiDg==
+  version "0.0.3-preview-20240902180544"
+  resolved "https://registry.yarnpkg.com/@medusajs/fulfillment-manual/-/fulfillment-manual-0.0.3-preview-20240902180544.tgz#9e2111ef2316b480d54cb8181c7453a5fcc79673"
+  integrity sha512-C+U7oz2gHxDas08QbTUrEbQjA8gl8NXtk9GMgs3g3zGNQI1Jw6Bso+NO8DJQl/tWJU2kCKZAVOLs3u8pDapOdA==
   dependencies:
-    "@medusajs/utils" "1.12.0-preview-20240711150439"
+    "@medusajs/utils" "1.12.0-preview-20240902180544"
     body-parser "^1.19.0"
     express "^4.17.1"
 
@@ -922,11 +922,9 @@
 
 "@medusajs/medusa-cli@1.3.23-preview-20240711150439":
   version "0.0.0"
-  uid ""
 
 "@medusajs/medusa-cli@link:./node_modules/@medusajs/medusa-cli":
   version "0.0.0"
-  uid ""
 
 "@medusajs/medusa-cli@preview":
   version "1.3.23-preview-20240711150439"
@@ -1154,6 +1152,11 @@
   resolved "https://registry.yarnpkg.com/@medusajs/types/-/types-1.12.0-preview-20240711150439.tgz#523da17547dc3c72004a5e935b1189798100864c"
   integrity sha512-uaR0r2zTrlwEk6T9wW6eNe45ibDsnLkNpRNe9jCXsmJd5zyuJyeMS/pkqfkamajVpZNBMA0P2pCHpRjpENDX2Q==
 
+"@medusajs/types@1.12.0-preview-20240902180544":
+  version "1.12.0-preview-20240902180544"
+  resolved "https://registry.yarnpkg.com/@medusajs/types/-/types-1.12.0-preview-20240902180544.tgz#bdc4de8ef614076618455052dca7158938e98902"
+  integrity sha512-uBTlkQSHeimYz32zgFmJMQqfMq/xhBCbM/YZKujWrp5mjBsaJf61ov9MIUslA6Iy6DBn+5EtUXK6JnfzYBKOqQ==
+
 "@medusajs/ui@3.0.1-preview-20240711150439":
   version "3.0.1-preview-20240711150439"
   resolved "https://registry.yarnpkg.com/@medusajs/ui/-/ui-3.0.1-preview-20240711150439.tgz#32d40a13dc1961264674348ad183a6eedd083932"
@@ -1214,6 +1217,25 @@
     dotenv "^16.4.5"
     jsonwebtoken "^9.0.2"
     knex "2.4.2"
+    pluralize "^8.0.0"
+    ulid "^2.3.0"
+
+"@medusajs/utils@1.12.0-preview-20240902180544":
+  version "1.12.0-preview-20240902180544"
+  resolved "https://registry.yarnpkg.com/@medusajs/utils/-/utils-1.12.0-preview-20240902180544.tgz#91464a7d8d5f34599b0689ddb6d407b5a6a51625"
+  integrity sha512-EQ/75lgaJdfOw7PgpAFua75FSsooXM/H5S+u0VZ+QqZ17BQ4WvTf8kScyvx9YCJPJHd8STJAzQe4B1hNOHnWXA==
+  dependencies:
+    "@medusajs/types" "1.12.0-preview-20240902180544"
+    "@mikro-orm/core" "5.9.7"
+    "@mikro-orm/migrations" "5.9.7"
+    "@mikro-orm/postgresql" "5.9.7"
+    awilix "^8.0.1"
+    bignumber.js "^9.1.2"
+    dotenv "^16.4.5"
+    dotenv-expand "^11.0.6"
+    jsonwebtoken "^9.0.2"
+    pg "^8.12.0"
+    pg-connection-string "^2.6.4"
     pluralize "^8.0.0"
     ulid "^2.3.0"
 
@@ -5127,12 +5149,19 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
+dotenv-expand@^11.0.6:
+  version "11.0.6"
+  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-11.0.6.tgz#f2c840fd924d7c77a94eff98f153331d876882d3"
+  integrity sha512-8NHi73otpWsZGBSZwwknTXS5pqMOrk9+Ssrna8xCaxkzEpU9OTf9R5ArQGVw03//Zmk9MOwLPng9WwndvpAJ5g==
+  dependencies:
+    dotenv "^16.4.4"
+
 dotenv@16.3.1:
   version "16.3.1"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
   integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
-dotenv@^16.4.5:
+dotenv@^16.4.4, dotenv@^16.4.5:
   version "16.4.5"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
@@ -6843,7 +6872,7 @@ pg@8.11.3:
   optionalDependencies:
     pg-cloudflare "^1.1.1"
 
-pg@^8.11.0, pg@^8.11.2, pg@^8.3.0:
+pg@^8.11.0, pg@^8.11.2, pg@^8.12.0, pg@^8.3.0:
   version "8.12.0"
   resolved "https://registry.yarnpkg.com/pg/-/pg-8.12.0.tgz#9341724db571022490b657908f65aee8db91df79"
   integrity sha512-A+LHUSnwnxrnL/tZ+OLfqR1SxLN3c/pgDztZ47Rpbsd4jUytsTtwQo/TLPRzPJMp/1pbhYVhH9cuSZLAajNfjQ==
